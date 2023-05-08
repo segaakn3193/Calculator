@@ -148,6 +148,30 @@ namespace Calculator
                 txtNumber.Text = "";
             txtNumber.Text = txtNumber.Text + _number;
         }
+
+        private void btnBank_Click(object sender, RoutedEventArgs e)
+        {
+            string number = txtNumber.Text;
+            secondNumber = Convert.ToSingle(txtNumber.Text);
+
+            if (txtNumber.Text.Length == 1)
+                txtNumber.Text = "0";
+            else
+                txtNumber.Text = number.Substring(0, txtNumber.Text.Length - 1);
+        }
+
+        private void btnPCT_Click(object sender, RoutedEventArgs e)
+        {
+            float finalResults = 0f;
+            secondNumber = Convert.ToSingle(txtNumber.Text);
+
+            finalResults = secondNumber / 100;
+
+            Add_Number("%");
+
+            txtNumber.Text = string.Format("{0:0.##########}", finalResults);
+        }
+
         private void Select_Operator(int _operator)
         {
             firstNumber = Convert.ToSingle(txtNumber.Text); //將輸入文字框轉換成浮點數，存入第一個數字的全域變數

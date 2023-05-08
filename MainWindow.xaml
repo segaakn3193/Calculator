@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="txtNumber" HorizontalAlignment="Center" Height="61" Margin="0,29,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="612" FontSize="16"/>
+        <TextBlock x:Name="txtNumber" HorizontalAlignment="Right" Height="61" Margin="0,36,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="612" FontSize="24" TextAlignment="Right"/>
         <Button x:Name="btnClear" Content="AC" HorizontalAlignment="Left" Height="42" Margin="61,112,0,0" VerticalAlignment="Top" Width="106" Click="btnClear_Click" FontSize="20"/>
         <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Height="42" Margin="226,112,0,0" VerticalAlignment="Top" Width="106" Click="btnSeven_Click" FontSize="20"/>
         <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Height="42" Margin="356,112,0,0" VerticalAlignment="Top" Width="106" Click="btnEight_Click" RenderTransformOrigin="0.426,0.535" FontSize="20"/>
@@ -25,6 +25,8 @@
         <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Height="42" Margin="625,0,0,0" VerticalAlignment="Center" Width="106" Click="btnPlus_Click" FontSize="20"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Height="42" Margin="625,282,0,0" VerticalAlignment="Top" Width="106" Click="btnMinus_Click" FontSize="20"/>
         <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Height="42" Margin="625,365,0,0" VerticalAlignment="Top" Width="106" Click="btnAdd_Click" FontSize="20"/>
+        <Button x:Name="btnBank" Content="&lt;--" HorizontalAlignment="Left" Margin="61,0,0,0" VerticalAlignment="Center" Height="42" Width="106" FontSize="20" Click="btnBank_Click"/>
+        <Button x:Name="btnPCT" Content="%" HorizontalAlignment="Left" Margin="61,365,0,0" VerticalAlignment="Top" Height="42" Width="106" FontSize="20" Click="btnPCT_Click"/>
 
     </Grid>
 </Window>
